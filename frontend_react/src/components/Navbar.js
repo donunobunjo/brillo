@@ -5,7 +5,9 @@ const Navbar = () => {
     <nav>
       <ul className="menus">
         {menuItems.map((menu, index) => {
-          return <MenuItems items={menu} key={index} />;
+          // return <MenuItems items={menu} key={index} />;
+          const depthLevel = 0;
+          return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
         })}
       </ul>
     </nav>
