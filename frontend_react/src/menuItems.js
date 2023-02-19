@@ -4,25 +4,38 @@ export const menuItems = [
       url: '/',
     },
     {
-      title: 'Services',
-      url: '/services',
+      title: 'Profile',
+      url: '/profile',
+    },
+    {
+      title: 'Buddies',
+      url: '/',
+    },
+    {
+      title: 'Discover',
+      url: '/',
+    },
+    {
+      title: 'Setting & Privacy',
+      url: '/settings',
       submenu: [
         {
-          title: 'web design',
-          url: 'web-design',
+          title: 'Change Password',
+          url: 'change-password',
         },
         {
-          title: 'web development',
-          url: 'web-dev',
+          title: 'Update Email',
+          url: 'update-email',
         },
         {
-          title: 'SEO',
-          url: 'seo',
+          title: 'Update Username',
+          url: 'update-username',
+        },
+        {
+          title: 'Logout',
+          url: 'logout',
         },
       ],
     },
-    {
-      title: 'About',
-      url: '/about',
-    },
+    
   ];
