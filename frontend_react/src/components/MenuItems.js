@@ -1,9 +1,10 @@
 import { useState ,useEffect, useRef} from "react";
 import Dropdown from './Dropdown';
+import { Link } from 'react-router-dom';
 
 const MenuItems = ({ items, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
-  
+
   let ref = useRef();
 
   useEffect(() => {
@@ -48,7 +49,7 @@ const MenuItems = ({ items, depthLevel }) => {
           />
         </>
       ) : (
-        <a href={items.url}>{items.title}</a>
+        <Link to={items.url}>{items.title}</Link>
       )}
     </li>
   );
