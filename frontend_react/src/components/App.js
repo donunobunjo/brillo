@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from '../routes/Home';
+import RegistrationForm from '../routes/RegistrationForm';
 import Profile from '../routes/Profile';
 import Layout from './Layout';
 // ...
@@ -9,7 +9,7 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<RegistrationForm />} />
           <Route path="profile" element={<Profile />} />
           {/* ...*/}
         </Route>
